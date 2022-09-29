@@ -14,7 +14,7 @@ Highly Efficient Stratum Server for KawPoW !
 
 -------
 ### Requirements
-***NOTE:*** _These requirements will be installed in the install section!_
+***NOTE:*** _These requirements will be installed in the install server section!_
 * Ubuntu Server 20.04.* LTS
 * Coin daemon
 * Node Version Manager
@@ -44,13 +44,15 @@ Highly Efficient Stratum Server for KawPoW !
     echo "rpcpassword=pass1" >> ~/.raven/raven.conf
     echo "prune=550" >> ~/.raven/raven.conf
     echo "daemon=1" >> ~/.raven/raven.conf
+    echo "rpcport=8766" >> ~/.raven/raven.conf
+    echo "port=8767" >> ~/.raven/raven.conf
     ./ravend
     ./raven-cli getnewaddress
 
 Example output: RNs3ne88DoNEnXFTqUrj6zrYejeQpcj4jk - it is the address of your pool, you need to remember it and specify it in the configuration file pool_configs/ravencoin.json.
 
 Information about pool wallet address.
- 
+    
     ./raven-cli getaddressesbyaccount ""
     
 Get more information.
@@ -84,13 +86,15 @@ Other helpfull commands.
     echo "rpcpassword=pass1" >> ~/.neoxa/neoxa.conf
     echo "prune=550" >> ~/.neoxa/neoxa.conf
     echo "daemon=1" >> ~/.neoxa/neoxa.conf
+    echo "rpcport=9766" >> ~/.neoxa/neoxa.conf
+    echo "port=9767" >> ~/.neoxa/neoxa.conf
     ./neoxad
     ./neoxa-cli getnewaddress
 
 Example output: GKdky7EFBuUSWPHzfaP1EkqW4joYpqxnHQ - it is the address of your pool, you need to remember it and specify it in the configuration file pool_configs/neoxa.json.
 
 Information about pool wallet address.
-
+    
     ./neoxa-cli getaddressesbyaccount ""
     
 Get more information.
@@ -121,6 +125,7 @@ Other helpfull commands.
     curl -L https://raw.githubusercontent.com/AlphaX-Projects/alphax-kawpow-server/master/install.sh | bash
 
 -------
+
 ### Configure Server
 
 Change "stratumHost": "stratum.alphax.pro", to your IP or DNS in file config.json:
@@ -279,7 +284,7 @@ Change "address": "RNs3ne88DoNEnXFTqUrj6zrYejeQpcj4jk", to your pool created wal
   "p2p": {
     "enabled": false,
     "host": "127.0.0.1",
-    "port": 8766,
+    "port": 8767,
     "disableTransactions": true
   }
 }
@@ -374,7 +379,7 @@ Change "address": "GKdky7EFBuUSWPHzfaP1EkqW4joYpqxnHQ", to your pool created wal
   "p2p": {
     "enabled": false,
     "host": "127.0.0.1",
-    "port": 9766,
+    "port": 9767,
     "disableTransactions": true
   }
 }
