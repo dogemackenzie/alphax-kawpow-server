@@ -1,0 +1,13 @@
+{
+  "name": "neoxa",
+  "symbol": "NEOX",
+  "algorithm": "kawpow",
+  "wallet": "https://github.com/NeoxaChain/Neoxa/releases",
+  "explorer": "https://explorer.neoxa.net/",
+  "explorerGetBlockJSON": "https://explorer.neoxa.net/api/getrawtransaction?decrypt=1&txid=",
+  "explorerGetBlock": "https://explorer.neoxa.net/block/",
+  "explorerGetTX": "https://explorer.neoxa.net/tx/",
+  "explorerGetAddress": "https://explorer.neoxa.net/address/",
+  "blockTime": 60,
+  "blockChange": 1
+}
