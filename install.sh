@@ -57,8 +57,8 @@ npm install -g pm2@5.2.0
 
 git config --global http.https://gopkg.in.followRedirects true
 git clone https://github.com/AlphaX-Projects/alphax-kawpow-server
-chmod -R +x kawpow-server/
-cd kawpow-server
+chmod -R +x alphax-kawpow-server/
+cd alphax-kawpow-server
 
 npm install
 npm update
